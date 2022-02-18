@@ -66,6 +66,11 @@ ul {
   justify-content: space-between;
 }
 
+/* Бордер нижнисй портфолио */
+.portfolio {
+  border-bottom: 1px solid #ececec;
+}
+
 .nav {
   background-color: var(--nav-bg-clr);
 }
@@ -181,6 +186,8 @@ ul {
 
 .hero-btn {
   padding: 10px 32px;
+  border: none;
+
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 16px;
@@ -316,7 +323,25 @@ ul {
   color: var(--main-txt-clr);
 }
 
+/* Portfolio */
+
+.main {
+  background-color: var(--nav-bg-clr);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.btn-list {
+  display: flex;
+  justify-content: center;
+}
+
 .radio-btn {
+  margin-right: 8px;
+  margin-bottom: 50px;
+  padding: 6px 22px;
+  border: none;
+
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
@@ -326,6 +351,11 @@ ul {
 
   color: var(--secondary-txt-clr);
   background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.last-btn:last-child {
+  margin-right: 0;
 }
 
 .radio-btn:hover,
@@ -334,11 +364,31 @@ ul {
   background-color: var(--accent-clr);
 }
 
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards-item {
+  padding-bottom: 20px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  border: 1px solid #eeeeee;
+}
+
+.third {
+  margin-right: 0;
+}
+
 .cards-link {
+  margin-bottom: 20px;
   text-decoration: none;
 }
 
 .cards-title {
+  padding-left: 24px;
+  margin-bottom: 4px;
   font-family: inherit;
   text-decoration: none;
   font-weight: 700;
@@ -350,6 +400,7 @@ ul {
 }
 
 .cards-post {
+  padding-left: 24px;
   font-family: inherit;
   text-decoration: none;
   font-size: 16px;
