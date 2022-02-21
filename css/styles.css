@@ -53,6 +53,12 @@ ul {
   list-style: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  min-height: auto;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -63,7 +69,6 @@ ul {
 
 .header-container {
   display: flex;
-  justify-content: space-between;
 }
 
 /* Бордер нижнисй портфолио */
@@ -76,7 +81,7 @@ ul {
 }
 
 .nav-link {
-  margin-right: 43px;
+  margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
 
@@ -108,13 +113,11 @@ ul {
 }
 
 .nav-item {
-  padding-top: 32px;
-  padding-bottom: 32px;
   margin-right: 50px;
 }
 
 .nav-item:last-child {
-  margin-right: 0;
+  margin-right: 331px;
 }
 
 .nav-links {
@@ -163,13 +166,9 @@ ul {
 
 .hero {
   text-align: center;
-  padding: 200px 15px;
-  margin-bottom: 94px;
-  background-color: var(--secondary-txt-clr);
-}
-
-.hero-title {
-  outline: 2px, solid, teal;
+  padding: 200px 0;
+  /* margin-bottom: 94px; */
+  background-color: #2f303a;
 }
 
 .hero-title {
@@ -201,10 +200,14 @@ ul {
 
 /* Секция "Наши особенности" */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .features-list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
 }
 
 .features-item {
@@ -229,7 +232,6 @@ ul {
 }
 
 .features-text {
-  margin-bottom: 94px;
   font-family: inherit;
   font-size: 14px;
   line-height: 1.71;
@@ -238,6 +240,10 @@ ul {
 }
 
 /* Чем мы занимаемся */
+
+.about {
+  padding-top: 0;
+}
 
 .about-list {
   display: flex;
@@ -256,16 +262,12 @@ ul {
   color: var(--secondary-txt-clr);
 }
 
-.about-item {
-  margin-bottom: 94px;
-}
-
 /* Наша команда */
 
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: #f5f4fa;
+  background-color: var(--secondary-bg-clr);
 }
 
 .team-title {
@@ -307,7 +309,7 @@ ul {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19px;
+  line-height: 1.19;
   text-align: center;
 
   color: var(--secondary-txt-clr);
@@ -325,20 +327,14 @@ ul {
 
 /* Portfolio */
 
-.main {
-  background-color: var(--nav-bg-clr);
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .btn-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .radio-btn {
   margin-right: 8px;
-  margin-bottom: 50px;
   padding: 6px 22px;
   border: none;
 
@@ -370,11 +366,10 @@ ul {
 }
 
 .cards-item {
-  padding-bottom: 20px;
   margin-right: 30px;
   margin-bottom: 30px;
 
-  border-bottom: 1px solid #eeeeee;
+  /* border-bottom: 1px solid #eeeeee; */
 }
 
 .third {
@@ -384,10 +379,18 @@ ul {
 .cards-link {
   margin-bottom: 20px;
   text-decoration: none;
+  color: var(--secondary-txt-clr);
+}
+
+.cards-indent {
+  padding-left: 22px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .cards-title {
-  padding-left: 24px;
   margin-bottom: 4px;
   font-family: inherit;
   text-decoration: none;
@@ -400,7 +403,6 @@ ul {
 }
 
 .cards-post {
-  padding-left: 24px;
   font-family: inherit;
   text-decoration: none;
   font-size: 16px;
@@ -417,6 +419,8 @@ ul {
 }
 
 .footer-link {
+  display: block;
+  margin-bottom: 20px;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -436,6 +440,14 @@ ul {
 
   color: var(--accent-clr);
 }
+
+.footer-item {
+  margin-bottom: 9px;
+}
+
+/* .cards-item:last-child {
+  margin-bottom: 0;
+} */
 
 .footer-adr {
   font-family: inherit;
